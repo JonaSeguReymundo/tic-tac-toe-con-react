@@ -47,8 +47,10 @@ button {
   cursor: pointer;
   transition: border-color 0.25s;
   white-space: nowrap;
-  overflow: hidden;
-  text-overflow: ellipsis;
+  width: auto; 
+  height: 40px; 
+  padding-left: 15px; 
+  padding-right: 15px;
 
 }
 button:hover {
@@ -59,10 +61,6 @@ button:focus-visible {
   outline: 4px auto -webkit-focus-ring-color;
 }
 
-button {
-  width: 200px; 
-  height: 40px;
-}
 
 .game {
   display: flex;
