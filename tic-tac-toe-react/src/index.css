@@ -25,7 +25,8 @@ a:hover {
 body {
   margin: 0;
   display: flex;
-  place-items: center;
+  justify-content: center;
+  align-items: center;
   min-width: 320px;
   min-height: 100vh;
 }
@@ -45,6 +46,10 @@ button {
   background-color: #1a1a1a;
   cursor: pointer;
   transition: border-color 0.25s;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+
 }
 button:hover {
   border-color: #646cff;
@@ -53,6 +58,65 @@ button:focus,
 button:focus-visible {
   outline: 4px auto -webkit-focus-ring-color;
 }
+
+button {
+  width: 200px; 
+  height: 40px;
+}
+
+.game {
+  display: flex;
+  flex-direction: row;
+}
+
+.game-board {
+  margin-right: 20px;
+}
+
+.board-row {
+  display: flex;
+}
+
+.square {
+  width: 100px; 
+  height: 100px; 
+  font-size: 24px; 
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #1a1a1a;
+  border: 1px solid #646cff;
+  margin: 5px;
+  transition: background-color 0.3s ease;
+}
+
+.square:hover {
+  background-color: #646cff;
+}
+
+.status {
+  margin-bottom: 10px;
+  font-size: 24px;
+}
+
+.game-info {
+  margin-left: 20px;
+}
+
+ol {
+  padding-left: 30px;
+}
+
+li {
+  margin-bottom: 10px;
+}
+
+button {
+  width: 150px;
+  height: 40px;
+  font-size: 16px;
+}
+
 
 @media (prefers-color-scheme: light) {
   :root {
